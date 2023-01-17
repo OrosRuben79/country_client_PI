@@ -30,7 +30,7 @@ export const SEARCH_COUNTRY_FOR_ACTIVITY = " SEARCH_COUNTRY_FOR_ACTIVITY"//busca
 export const CLEAN_ACTIVITY_SEARCHER = "CLEAN_ACTIVITY_SEARCHER "//limpiador del buscador de paises
 
 
-const URL_SERVER = process.env.URL_SERVER || "http://localhost:3001/countries"
+const URL_SERVER = process.env.REACT_APP_COUNTRY || "http://localhost:3001/countries"
 
 //----------------------------------------------------------------
 export function getAllCountry() {
