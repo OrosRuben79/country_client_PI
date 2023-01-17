@@ -30,11 +30,13 @@ export const SEARCH_COUNTRY_FOR_ACTIVITY = " SEARCH_COUNTRY_FOR_ACTIVITY"//busca
 export const CLEAN_ACTIVITY_SEARCHER = "CLEAN_ACTIVITY_SEARCHER "//limpiador del buscador de paises
 
 
+const URL_SERVER = process.env.URL_SERVER || "http://localhost:3001/countries"
+
 //----------------------------------------------------------------
 export function getAllCountry() {
     return async function (dispatch) {
         try {
-            const res = await axios.get("http://localhost:3001/countries")
+            const res = await axios.get(`${URL_SERVER}/countries`)
             return dispatch({ type: "GET_ALL_COUNTRY", payload: res.data })
         } catch (error) {
             return dispatch({ type: SET_ERROR, payload: true, })
@@ -44,7 +46,7 @@ export function getAllCountry() {
 export function getNameCountry(name) {
     return async function (dispatch) {
         try {
-            const res = await axios.get(`http://localhost:3001/countries?name=${name}`)
+            const res = await axios.get(`${URL_SERVER}/countries?name=${name}`)
       
             return dispatch({ type: "GET_NAME_COUNTRY", payload: res.data })
 
@@ -56,7 +58,7 @@ export function getNameCountry(name) {
 export function getDetailCountry(id) {
     return async function (dispatch) {
         try {
-            const res = await axios.get(`http://localhost:3001/countries/${id}`)
+            const res = await axios.get(`${URL_SERVER}/countries?name=${id}`)
             dispatch({ type: "GET_DETAIL_COUNTRY", payload: res.data[0] })
         } catch (error) {
             return dispatch({ type: SET_ERROR, payload: true });
@@ -66,7 +68,7 @@ export function getDetailCountry(id) {
 export function getActivity() {
     return async function (dispatch) {
         try {
-            const json = await axios.get("http://localhost:3001/activities");
+            const json = await axios.get(`${URL_SERVER}/activities`);
             return dispatch({ type: "GET_ACTIVITY", payload: json.data });
         } catch (error) {
             return dispatch({ type: SET_ERROR, payload: true });
@@ -88,7 +90,7 @@ export function postActivity(data) {
     // console.log(data)
     return async function (dispatch) {
         try {
-            const json = await axios.post("http://localhost:3001/activities", data);
+            const json = await axios.post(`${URL_SERVER}/activities`, data);
              return json
         } catch (error) {
             console.log(error)
@@ -171,7 +173,7 @@ export const cleanFind = () => {
     return async (dispatch) => {
       try {
         const data = await axios.get(
-          `http://localhost:3001/countries?name=${name}`
+            `${URL_SERVER}/countries?name=${name}`
         );
         console.log(data)
         return dispatch({
