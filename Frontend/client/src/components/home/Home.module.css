@@ -1,0 +1,58 @@
+.home {
+    background-color: rgb(110, 65, 192);
+    display: flex;
+    justify-content: center;
+    padding: 40px
+    
+    }
+
+.filters {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 1rem;
+    margin-left: 3px;
+    align-content: space-between;
+   
+ }
+
+.filters:focus {
+    outline: none;
+}
+
+.filterOrder {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    height: 2rem;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color:#868686
+}
+
+.filterOrder:hover{
+    background-color:#15f077
+}
+
+.filterOrder:focus {
+    outline: none;
+}
+
+
+.filterContinent {
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    height: 2rem;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:#868686
+}
+  
+.filterContinent:hover{
+    background-color:#15f077
+}
+
+.filterContinent:focus {
+    outline: none;
+}

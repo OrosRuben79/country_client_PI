@@ -1,0 +1,165 @@
+
+   .image {
+     width:30px;
+     height:10px;
+     margin-top:40px;
+    }
+
+    .images{
+      margin-top:5px;
+      width:260px;
+      height:180px;
+    }
+ 
+
+   .cardCreate {
+    margin-top: 60px;
+    background-color:#0eb5df;
+    width: 700px;
+    min-height: 420px;
+    border-radius: 50px;
+    position: relative;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    opacity: 80%;
+   
+  }
+
+  
+  .contGral {
+    background: rgb(110, 65, 192);
+    height: 660px;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  .paiss {
+    height: 510px;
+    position: absolute;
+    right: -180px;
+  }
+  
+  .cardTitle {
+    margin-top:-20px;
+    background-color:rgb(244, 250, 247);
+    height: 60px;
+    display: flex;
+    border-radius: 50px 50px 0px 0px;
+    align-items: center;
+  }
+  
+  .titleNav {
+    color: rgb(29, 28, 28);
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    padding: 0.5em;
+  }
+  
+  .countryNav {
+    height: 30px;
+    margin-left: 30px;
+  }
+  
+  .izq {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 60px;
+    gap: 1.3rem;
+  }
+  
+  .der {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 40px;
+    gap: 1.3rem;
+  }
+  
+  .form {
+    padding-top: 20px;
+    display: flex;
+    font-family: "Rubik", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+  }
+  
+  .inputs {
+    margin-top: 5px;
+    padding-left: 15px;
+    height: 30px;
+    width: 200px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f2eded;
+  }
+  
+  .inputs:focus {
+    outline: none;
+  }
+  
+  .button {
+    height: 30px;
+    width: 100px;
+    border-radius: 8px;
+    background-color: #868686;
+    color: #fff;
+    font-family: "Rubik", sans-serif;
+    cursor: pointer;
+    border: none;
+    margin-top: 5px;
+  }
+
+  .button:hover{
+    background-color:#15f077
+  }
+
+  .buttons{
+    align-content: space-between;
+  }
+  
+  
+  .error {
+    font-family: "Rubik", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5px;
+    color: #eb544d;
+  }
+  
+  .navBar {
+    background-color:  #1a1818;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+  
+  .buttonHome {
+    cursor: pointer;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-family: "Rubik", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+
+  .links{
+    list-style: none;
+    align-items: center;
+  }
+  
+  .links li{
+     display: inline-block;
+     padding: 0 20px;
+     font-size: 700;
+     color: #eceff1;
+     text-decoration: none;
+  }
+  .links li:hover{
+    color: #ffbc0e;
+  }
